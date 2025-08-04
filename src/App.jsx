@@ -12,6 +12,7 @@ import Resume from "./sections/Resume";
 function App() {
   return (
     <>
+    {/* git add . && git commit -m "fixed svg error" && git push origin main */}
       <div>
         <Navbar />
         <Hero />
