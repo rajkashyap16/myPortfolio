@@ -26,8 +26,8 @@ const Footer = () => {
           </a>
         </div>
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed ">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-          consequuntur amet culpa cum itaque neque.
+     Hello , I'm Raj kashyap 
+     a web developer and a passionate learner.
         </p>
         <nav aria-label="Footer Nav" className="mt-12">
           <ul className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">

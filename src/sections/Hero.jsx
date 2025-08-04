@@ -1,10 +1,6 @@
 import React from "react";
 import profile from "../assets/profile.jpg";
 import down from "../assets/down2.svg";
-
-
-
-
 const Hero = () => {
   return (
     <div className="w-full h-[90vh] text-center bg-black text-white  ">
