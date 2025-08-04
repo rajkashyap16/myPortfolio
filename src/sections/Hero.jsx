@@ -1,4 +1,6 @@
 import React from "react";
+import downArrow from './assets/down2.svg';
+import profile from './assets/profile.jpg';
 
 const Hero = () => {
   return (
@@ -10,12 +12,12 @@ const Hero = () => {
         This is a portfolio website that showcases my skills and experience as a
         web developer.
       </p>
-      <img src="./src/assets/test.jpg" alt="image" className="mx-auto rounded-full object-cover border m-4"  />
+      <img src={profile} alt="image" className="mx-auto rounded-full object-cover border m-4"  />
       <button className=" text-white font-thin  my-[8%] mx-auto">
         {/* cursor icon that send to project section that uses id to navigate to that section */}
         <a href="#projects">
           <img
-            src="./src/assets/down2.svg"
+             src={downArrow} alt="down arrow" 
             className="text-white animate-bounce "
             width={50}
         
