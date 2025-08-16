@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "iconName": "FaUserGraduate",
+    "text": "Raj Kashyap, <strong>aspiring frontend developer</strong> passionate about building clean, responsive UIs."
+  },
+  {
+    "id": 2,
+    "iconName": "FaUniversity",
+    "text": "Pursuing <strong>MBA (2nd year)</strong> with a specialization in Marketing."
+  },
+  {
+    "id": 3,
+    "iconName": "FaUniversity",
+    "text": "Completed BCA from BIMT College with 72%."
+  },
+  {
+    "id": 4,
+    "iconName": "FaSchool",
+    "text": "Passed 12th from KV Public School."
+  },
+  {
+    "id": 5,
+    "iconName": "FaCode",
+    "text": "Completed a <strong>6-month Web Development course</strong> from Ducat."
+  },
+  {
+    "id": 6,
+    "iconName": "FaCode",
+    "text": "<strong>Skilled in React, JavaScript, HTML, CSS</strong> and frontend development."
+  },
+  {
+    "id": 7,
+    "iconName": "FaCode",
+    "text": "Built multiple <strong>personal projects focused on UI/UX and responsiveness</strong>."
+  },
+  {
+    "id": 8,
+    "iconName": "FaRocket",
+    "text": "Looking for <strong>opportunities as a Frontend Developer</strong>."
+  }
+]

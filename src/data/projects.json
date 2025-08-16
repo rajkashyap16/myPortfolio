@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "A personal portfolio to showcase my skills and projects, built using React and Tailwind CSS.",
+    "tech": ["React", "Tailwind CSS"],
+    "github": "https://github.com/your-username/portfolio",
+    "demo": "https://your-portfolio-site.netlify.app",
+    "image": "https://picsum.photos/seed/Portfolio%20Website/800/600",
+    "colSpan": "md:col-span-2",
+    "rowSpan": "md:row-span-2"
+  },
+  {
+    "title": "Todo App",
+    "description": "A simple yet powerful todo app with CRUD operations and local storage.",
+    "tech": ["React", "JavaScript"],
+    "github": "https://github.com/your-username/todo-app",
+    "demo": "https://your-todo-app.netlify.app",
+    "image": "https://picsum.photos/seed/Todo%20App/400/600",
+    "colSpan": "md:col-span-1",
+    "rowSpan": "md:row-span-2"
+  },
+  {
+    "title": "Weather App",
+    "description": "A weather forecast app using OpenWeatherMap API with live search functionality.",
+    "tech": ["React", "API"],
+    "github": "https://github.com/your-username/weather-app",
+    "demo": "https://your-weather-app.netlify.app",
+    "image": "https://picsum.photos/seed/Weather%20App/400/300",
+    "colSpan": "md:col-span-2",
+    "rowSpan": "md:row-span-2"
+  },
+  {
+    "title": "New Example Project",
+    "description": "This is a new project added as an example.",
+    "tech": ["New Tech", "Another Tech"],
+    "github": "#",
+    "demo": "#",
+    "image": "https://picsum.photos/seed/New%20Example%20Project/400/300",
+    "colSpan": "md:col-span-1",
+    "rowSpan": "md:row-span-2"
+  }
+]
