@@ -7,7 +7,7 @@ import InteractiveButton from "../components/InteractiveButton";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 text-center text-white bg-black bg-animated-gradient pt-16 md:pt-0">
+    <section id="home" className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 text-center text-white bg-black bg-animated-gradient pt-16 md:pt-0">
       {/* Smoke effect OVER text + bg */}
       {/* <div className="absolute inset-0 z-50">
         <MouseSmokeEffect />

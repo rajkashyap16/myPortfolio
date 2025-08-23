@@ -47,9 +47,9 @@ const SkillIcon = ({ skill }) => {
 const Skills = () => {
   return (
     <section id="skills" className="bg-gray-100 dark:bg-gray-900 py-20 pt-20 px-6 md:px-20">
-      <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-16">My Skills</h2>
-        <div className="flex justify-center items-center gap-12 flex-wrap">
+      <div className="max-w-5xl mx-auto text-center ">
+        <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-16 fadeup-animation">My Skills</h2>
+        <div className="flex justify-center items-center gap-12 flex-wrap fadeup-animation">
           {skills.map((skill, index) => (
             <SkillIcon key={index} skill={skill} />
           ))}

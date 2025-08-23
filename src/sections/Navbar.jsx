@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const links = [ "Home", "About", "Projects", "Resume", "Contact"];
+  const links = [ "Home", "About", "Projects", "Contact"];
 
   return (
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 flex w-[92%] items-center justify-between rounded-full border border-white/80 px-6 py-3 text-gray-500 bg-blend-darken backdrop-blur-xl bg-transparent">
@@ -32,7 +32,7 @@ export default function Navbar() {
       <div className="hidden gap-3 md:flex">
        
         <button className="rounded-full bg-white px-4 py-2 font-semibold text-black shadow-lg transition hover:shadow-xl hover:bg-black hover:text-white border-white border  hover:border-white transi duration-100 ease-linear hover:scale-105 hover:shadow-white">
-          MyResume
+         <a href="#resume">MyResume</a>
         </button>
       </div>
 

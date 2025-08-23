@@ -9,9 +9,27 @@ body,html{
   rgba(155, 93, 229, 0.5),   /* purple */
   rgba(21, 18, 28, 1) 60%
 );
+}
 
+.fadeup-animation{
+
+  animation: text-appear both ;
+ animation-timeline: view( 10% 5%);
+ 
 
 }
+@keyframes text-appear {
+  
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 :root {

@@ -1,21 +1,12 @@
 [
-  {
-    "title": "Portfolio Website",
-    "description": "A personal portfolio to showcase my skills and projects, built using React and Tailwind CSS.",
-    "tech": ["React", "Tailwind CSS"],
-    "github": "https://github.com/your-username/portfolio",
-    "demo": "https://rajkashyap16.netlify.app",
-    "image": "https://picsum.photos/seed/Portfolio%20Website/800/600",
-    "colSpan": "md:col-span-1",
-    "rowSpan": "md:row-span-1"
-  },
+
   {
     "title": "ECommerce website",
     "description": "A simple yet powerful todo app with CRUD operations and local storage.",
     "tech": ["Html/CSS", "JavaScript","Bootstrap"],
     "github": "https://github.com/rajkashyap16/CaraEcommerce",
     "demo": "https://rajecommerce.netlify.app/",
-    "image": "https://private-user-images.githubusercontent.com/78655730/478689768-2dc8d14c-abb4-4d10-b54d-a8a18d76e44b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTUzNjAzOTUsIm5iZiI6MTc1NTM2MDA5NSwicGF0aCI6Ii83ODY1NTczMC80Nzg2ODk3NjgtMmRjOGQxNGMtYWJiNC00ZDEwLWI1NGQtYThhMThkNzZlNDRiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODE2VDE2MDEzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk5NDUwMTg4MTI2NjNiYzQ3YzUwOTcwNzAyNzBmODM1ODFkMDdmMDcxMGYwMDI1NjdlMzY0OWQzZWMwMThiNDUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.bk13YEq2Yht6zqOLyWyyVzZD67oScXLItsN850m1uHo",
+    "image": "https://i.postimg.cc/P5z2Phxm/ecommerce.png",
     "colSpan": "md:col-span-2",
     "rowSpan": "md:row-span-1"
   },
@@ -25,8 +16,8 @@
     "tech": ["React", "Google sheet API", "Tailwind CSS" ,"Ai"],
     "github": "https://github.com/rajkashyap16/customer-dashboard",
     "demo": "https://raj-customer-dashboard.netlify.app/",
-    "image": "https://private-user-images.githubusercontent.com/78655730/481263961-71c4ca3f-733e-4655-a357-cc14e25dd86d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU5MzU4ODEsIm5iZiI6MTc1NTkzNTU4MSwicGF0aCI6Ii83ODY1NTczMC80ODEyNjM5NjEtNzFjNGNhM2YtNzMzZS00NjU1LWEzNTctY2MxNGUyNWRkODZkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIzVDA3NTMwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk1N2VmNTJmNjQ1OTk5MDVmMDMxY2Y5ZWMxOGVlYWNlMjZkN2RlZjUzNjVmYmVmYWQyZWRmOTBiMzE2ODMyMGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.6hi501FWj6aJ0MO7zx1ewS0BWKQTm4AkMMobbUHVhSs",
-    "colSpan": "md:col-span-1",
+    "image": "https://i.postimg.cc/j5kJ1nFs/customer-dashboard.png",
+    "colSpan": "md:col-span-2",
     "rowSpan": "md:row-span-1"
   }
    
