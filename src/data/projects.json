@@ -21,7 +21,7 @@
   },
   {
     "title": "Customer-Dashboard",
-    "description": "A weather forecast app using OpenWeatherMap API with live search functionality.",
+    "description": "Built a Customer Dashboard in React with Chart.js to visualize sentiment data using Pie, Bar, and Line charts.",
     "tech": ["React", "Google sheet API", "Tailwind CSS" ,"Ai"],
     "github": "https://github.com/rajkashyap16/customer-dashboard",
     "demo": "https://raj-customer-dashboard.netlify.app/",
