@@ -1,24 +1,7 @@
-feat: Enhance portfolio with new features and improvements
+fix: Conditionally set base path in vite.config.js for Netlify deployment
 
-This commit introduces a series of enhancements and refactorings across the portfolio:
+This commit modifies `vite.config.js` to conditionally set the `base` path.
+- If `process.env.NETLIFY` is true (during Netlify builds), `base` is set to `/`.
+- Otherwise (local development or GitHub Pages builds), `base` remains `/myPortfolio`.
 
-- **Skills Section:**
-  - Implemented a minimal design with interactive tooltips on hover, showing skill name and progress.
-  - Replaced framer-motion based tooltip with a basic CSS-only solution.
-- **Projects Section:**
-  - Implemented a dynamic bento grid layout with responsive column and row spans.
-  - Added hover effects including scale, glowing border, and dimming of non-hovered items.
-  - Moved project data to `src/data/projects.json` for better organization.
-  - Updated image links to use `picsum.photos` with unique seeds.
-  - Ensured mobile responsiveness with a 1-column (xs), 2-column (sm), and 4-column (md+) grid.
-- **Resume Section:**
-  - Enhanced interactivity with `ScrollReveal` animations for content and download button.
-  - Added a placeholder image for resume preview.
-  - Made the download button "more alive" with hover effects (scale, shadow) and a pulsing animation.
-- **Global Improvements:**
-  - Organized CSS files into `src/styles` and updated all import paths.
-  - Implemented a dark/light mode toggle with theme persistence using `localStorage`.
-  - Configured Tailwind CSS for dark mode (`darkMode: 'class'`).
-  - Added smooth transition (200ms linear) for theme changes.
-  - Adjusted top padding in all sections (except Hero) to prevent content overlap with the fixed Navbar.
-  - Fixed `MouseSmokeEffect` to allow clicks to pass through and cover the entire project area.
+This resolves the blank page issue when deploying to Netlify, as Netlify expects a root base path unless configured otherwise.

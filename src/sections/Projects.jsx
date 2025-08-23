@@ -1,9 +1,8 @@
-// src/components/Projects.jsx
-
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
-import ScrollReveal from '../components/ScrollReveal';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import ScrollReveal from "../components/ScrollReveal";
+import projects from "../data/projects.json";
 // Import the project data from the JSON file.
 // The data is an array of objects, where each object represents a project.
 // To add, remove, or modify projects, you can edit the `projects.json` file in the `src/data` directory.
@@ -16,7 +15,6 @@ import ScrollReveal from '../components/ScrollReveal';
 // - image: The URL of the project image.
 // - colSpan: The number of columns the project card should span in the bento grid (e.g., 'md:col-span-2').
 // - rowSpan: The number of rows the project card should span in the bento grid (e.g., 'md:row-span-2').
-import projects from '../data/projects.json';
 
 /**
  * A card component to display a single project.
@@ -25,13 +23,23 @@ import projects from '../data/projects.json';
  * @param {function} onMouseEnter - Function to call when the mouse enters the card.
  * @param {function} onMouseLeave - Function to call when the mouse leaves the card.
  */
+
 const ProjectCard = ({ project, isHovered, onMouseEnter, onMouseLeave }) => {
   // Variants for the card animation using framer-motion.
   // Defines the styles for the initial, hover, and dimmed states.
   const cardVariants = {
-    initial: { scale: 1, boxShadow: 'none' },
-    hover: { scale: 1.05, boxShadow: '0 0 40px rgba(155, 93, 229, 0.8)' }, // Spotlight effect on hover
-    dimmed: { scale: 0.95, opacity: 0.7, boxShadow: '0 0 20px rgba(255, 255, 255, 0.2)' }, // Dimmed effect for non-hovered cards
+    initial: { scale: 1, boxShadow: "none", filter: "grayscale(100%)" },
+    hover: {
+      scale: 1.03,
+      boxShadow: "0 0 40px rgba(155, 93, 229, 0.8)",
+      filter: "grayscale(0%)",
+    }, // Spotlight effect on hover
+    dimmed: {
+      scale: 1,
+      opacity: 0.7,
+      boxShadow: "0 0 20px rgba(255, 255, 255, 0.2)",
+      filter: "grayscale(100%)",
+    }, // Dimmed effect for non-hovered cards
   };
 
   return (
@@ -44,8 +52,8 @@ const ProjectCard = ({ project, isHovered, onMouseEnter, onMouseLeave }) => {
       // The animation state is determined by whether the card is hovered or not.
       // If no card is hovered, all cards are in the 'initial' state.
       // If a card is hovered, it's in the 'hover' state, and the others are in the 'dimmed' state.
-      animate={isHovered === null ? 'initial' : (isHovered ? 'hover' : 'dimmed')}
-      transition={{ duration: 0.4, ease: 'easeOut' }}
+      animate={isHovered === null ? "initial" : isHovered ? "hover" : "dimmed"}
+      transition={{ duration: 0.4, ease: "easeOut" }}
     >
       <img
         src={project.image}
@@ -60,18 +68,32 @@ const ProjectCard = ({ project, isHovered, onMouseEnter, onMouseLeave }) => {
         {/* Display the tech stack */}
         <div className="flex flex-wrap gap-2 mt-4">
           {project.tech.map((tech, idx) => (
-            <span key={idx} className="px-2 py-1 bg-white/20 rounded-full text-xs">
+            <span
+              key={idx}
+              className="px-2 py-1 bg-white/20 rounded-full text-xs"
+            >
               {tech}
             </span>
           ))}
         </div>
         {/* Links to GitHub and live demo */}
-        <div className="flex gap-4 mt-6">
-          <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:text-accent-purple transition-colors">
+        <div className="flex gap-4 mt-6 items-center">
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent-purple transition-colors  hover:text-red-400"
+          >
             <FaGithub size={20} />
           </a>
-          <a href={project.demo} target="_blank" rel="noopener noreferrer" className="hover:text-accent-purple transition-colors">
-            <FaExternalLinkAlt size={20} />
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent-purple transition-colors flex gap-2 border border-black px-2 py-1 bg-black rounded-md text-center items-center hover:bg-white hover:text-black hover:shadow-md hover:shadow-slate-100"
+          >
+            Demo
+            <FaExternalLinkAlt size={12} />
           </a>
         </div>
       </div>
@@ -102,7 +124,7 @@ const Projects = () => {
           - `gap-4`: Sets the gap between grid items (1rem).
           - `md:grid-flow-dense`: This is the magic for the bento grid. It tells the grid to try to fill in any holes to create a more compact layout.
         */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:grid-flow-dense">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:grid-flow-dense ">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
